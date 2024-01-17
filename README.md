@@ -10,7 +10,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [Back End Link ](#-backend-) 
+    - [Frontend Link ](#frontend-link) 
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -52,7 +52,7 @@ Key features of the application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Backend Link <a name="backend"></a> 
+### Frontend Link <a name="frontend"></a> 
 The frontend of this Application can be found <a href="https://github.com/Chimoneg27/hello-react-front-end">in this repository</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

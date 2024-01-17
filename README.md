@@ -26,27 +26,34 @@
 
 # 📖 Hello React Frontend <a name="about-project"></a>
 
-This is a simple app that generates random greetings by connecting with the rails backend api. It is built React and react-redux.
+**Hello Rails Backend** is an illustrative example of a straightforward API, showcasing the development of a full-stack web application. It combines a frontend built with React JS and a backend implemented in Ruby on Rails, each residing in separate repositorie
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- <a href="https://www.postgresql.org/">PostgreSQL</a>
-- <a href="https://react.dev/">React</a>
+<details>
+  <summary>Server</summary>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+</details>
 
+<details>
+  <summary>Database</summary>
+    <li><a href="https://www.ruby-lang.org/en/">PostgreSQL</a></li>
+</details>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 Key features of the application.
 
-- **Generate random greetings on the display**
+- **Provides an API endpoint that returns a random greeting**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Backend Link <a name="backend"></a> 
-The backend of this Application can be found <a href="https://github.com/Chimoneg27/hello-rails-back-end">in this repository</a>
+The frontend of this Application can be found <a href="https://github.com/Chimoneg27/hello-react-front-end">in this repository</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +68,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```
-    react > 16.3.2
+    rails > 7.2
 ```
 
 ### Setup
@@ -71,20 +78,46 @@ Clone this repository to your desired folder:
 ```bash
   git clone https://github.com/Chimoneg27/hello-rails-back-end.git
 
-  cd hello-react-front-end
+  cd hello-rails-back-end
 
-  npm start
+  rails s
 ```
 
 ### Usage
 
 to use this project:
+First setup your database
 
 ```
-   npm start
+  default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    username: [your_username]
+    password: [your_password]
+    host: localhost
+
+  development:
+    <<: *default
+    database: [your_database_for_development]
+
+  test:
+    <<: *default
+    database: [your_database_for_test]
+
+  production:
+    <<: *default
+    database: [your_database_for_production]
+
 ```
 
-it will run the server on ```localhost:3001```
+Then run the server
+```
+rails s
+
+```
+
+it will run the server on ```localhost:3000```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +147,7 @@ No Features will be added to the project.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Chimoneg27/hello-rails-react/issues).
+Feel free to check the [issues page](https://github.com/Chimoneg27/hello-rails-back-end/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
